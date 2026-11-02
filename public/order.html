@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ee"><title>Your order | Ribhika's Kitchen</title>
+  <link rel="stylesheet" href="/css/global.css"><link rel="stylesheet" href="/css/order.css">
+  <script src="/js/order.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">R</span>Ribhika's Kitchen</a><nav><a href="/menu.html">Menu</a><a class="active" href="/order.html">Your order</a><a href="/admin.html">Admin</a></nav></header>
+  <main class="page-main order-layout">
+    <section class="page-heading"><p class="eyebrow">YOUR PICKS</p><h1>Your order</h1><p>Check your items and add your details to place the order.</p></section>
+    <section class="order-panel">
+      <div id="cart-items" class="cart-items" aria-live="polite"></div>
+      <div class="cart-total"><span>Total</span><strong id="cart-total">₹0.00</strong></div>
+      <a class="back-link" href="/menu.html">← Back to menu</a>
+      <form id="order-form" class="order-form">
+        <label for="customer-name">Your name</label><input id="customer-name" name="customer_name" type="text" maxlength="100" required autocomplete="name" placeholder="Enter your name">
+        <label for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" maxlength="20" required autocomplete="tel" placeholder="Enter your phone number">
+        <button id="place-order" class="primary-button" type="submit" disabled>Place order</button>
+        <p id="order-message" class="order-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Ribhika's Kitchen</span><span>Made with a little extra love.</span></footer>
+</body>
+</html>
